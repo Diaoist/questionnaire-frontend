@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "调查小问卷",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#f0f0f0",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#f00001",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "",
+      "selectedIconPath": "",
+      "text": "调查问卷"
+    }, {
+      "pagePath": "pages/index/index",
+      "iconPath": "",
+      "selectedIconPath": "",
+      "text": "我的数据"
+    }]
+  },
+  "debug": true
+}
