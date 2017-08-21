@@ -1,31 +1,49 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "example/index",
+
+    "example/button/button",
+    "example/list/list",
+    "example/input/input",
+    "example/slider/slider",
+    "example/uploader/uploader",
+
+    "example/article/article",
+    "example/badge/badge",
+    "example/flex/flex",
+    "example/footer/footer",
+    "example/gallery/gallery",
+    "example/grid/grid",
+    "example/icons/icons",
+    "example/loadmore/loadmore",
+    "example/panel/panel",
+    "example/preview/preview",
+    "example/progress/progress",
+
+    "example/actionsheet/actionsheet",
+    "example/dialog/dialog",
+    "example/msg/msg",
+    "example/msg/msg_success",
+    "example/msg/msg_fail",
+    "example/picker/picker",
+    "example/toast/toast",
+
+    "example/navbar/navbar",
+    "example/tabbar/tabbar",
+
+    "example/searchbar/searchbar"
   ],
-  "window":{
+  "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "调查小问卷",
-    "navigationBarBackgroundColor": "#ffffff",
-    "backgroundTextStyle":"light",
-    "backgroundColor": "#f0f0f0",
-    "enablePullDownRefresh": true
+    "navigationBarTitleText": "WeUI for 小程序",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
   },
-  "tabBar": {
-    "color": "#dddddd",
-    "selectedColor": "#f00001",
-    "borderStyle": "white",
-    "backgroundColor": "#ffffff",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "调查问卷"
-    }, {
-      "pagePath": "pages/index/index",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "我的数据"
-    }]
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
   },
   "debug": true
 }
