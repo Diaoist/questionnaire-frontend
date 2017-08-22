@@ -1,0 +1,17 @@
+.set-questionnaire {
+  width: 400rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  top: 238rpx;
+  color:#000; 
+  background: #c8e6c9
+}
+
+.my-questionnaire {
+  width: 400rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  top: 382rpx;
+  color:#000; 
+  background: #b3e5fc
+}

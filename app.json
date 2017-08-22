@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/home/home",
+
     "example/index",
 
     "example/button/button",
@@ -35,7 +37,7 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "WeUI for 小程序",
+    "navigationBarTitleText": "简问卷",
     "navigationBarBackgroundColor": "#f8f8f8",
     "backgroundColor": "#f8f8f8"
   },

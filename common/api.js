@@ -9,5 +9,6 @@ if (env === 'dev') {
 }
 
 export default {
-  test: prefix + ''
+  test: prefix + '',
+  USER_LOGIN: prefix + '',
 }
