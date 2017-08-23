@@ -1,0 +1,17 @@
+/* newQN.wxss */
+.title-input {
+  height: 104rpx;
+  line-height: 104rpx;
+  width: 750rpx;
+  padding-left: 40rpx;
+  margin-top: 40rpx;
+  font-size: 52rpx;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.add {
+  margin-top: 170rpx;
+  width: 418rpx;
+  background: #fff;
+  border: 1px dashed #e5e5e5;
+}
