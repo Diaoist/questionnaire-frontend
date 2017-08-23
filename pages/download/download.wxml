@@ -1,0 +1,5 @@
+<view class="page">
+  
+  <image class="download-file" mode="aspectFit" src="/image/file.svg"></image>
+  <button class="weui-btn download-questionnaire" bindtap="myQN">下载文件</button>
+</view>
