@@ -29,11 +29,7 @@
     "example/navbar/navbar",
     "example/tabbar/tabbar",
     "example/searchbar/searchbar",
-<<<<<<< HEAD
-    "pages/set/newQN/newQN"
-=======
     "pages/download/download"
->>>>>>> 971da479b552ba4b7ab3b25683afa742d5b2d680
   ],
   "window": {
     "navigationBarTextStyle": "black",
