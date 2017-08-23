@@ -1,2 +1,24 @@
 <input placeholder="Title" class="title-input"/>
-<button class="add">+</button>
+<view class="question">
+  <input placeholder="Sub-Title" class="sub-title-input"/>
+  <button class="choiceEventType">选项A</button>
+  <button class="choiceEventType">选项B</button>
+  <button class="choiceEventType border-dashed">+</button>
+  <view class="classname"></view>
+</view>
+
+<view class="question">
+  <input placeholder="Sub-Title" class="sub-title-input"/>
+  <button class="choiceEventType">选项A</button>
+  <button class="choiceEventType">选项B</button>
+  <button class="choiceEventType border-dashed">+</button>
+</view>
+
+<view class="">
+  <view class="line"></view>
+  <button class="choiceEventType">单选题</button>
+  <button class="choiceEventType">多选题</button>
+  <button class="choiceEventType">填空题</button>
+  <button class="choiceEventType border-dashed">+</button>
+</view>
+<button class="add" bindtap="addEvent">+</button>
