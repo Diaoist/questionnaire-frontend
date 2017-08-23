@@ -1,0 +1,15 @@
+/* download.wxss */
+.download-questionnaire {
+  width: 400rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  top: 382rpx;
+  color:#000; 
+  background: #1AAD19
+}
+
+.download-file {
+  width: 288rpx;
+  height: 288rpx;
+  top: 382rpx;
+}
