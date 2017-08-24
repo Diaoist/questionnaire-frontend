@@ -1,9 +1,9 @@
 <input placeholder="Title" class="title-input"/>
 <view class="question">
   <input placeholder="Sub-Title" class="sub-title-input"/>
-  <button class="choiceEventType">选项A</button>
-  <button class="choiceEventType">选项B</button>
-  <button class="choiceEventType border-dashed">+</button>
+  <input class="choiceEventType" placeholder-class="choicePlaceholder" placeholder="选项A"/>
+  <input class="choiceEventType" placeholder-class="choicePlaceholder" placeholder="选项B"/>
+  <input class="choiceEventType border-dashed" placeholder-class="choicePlaceholder" placeholder="+"/>
   <view class="classname"></view>
 </view>
 
