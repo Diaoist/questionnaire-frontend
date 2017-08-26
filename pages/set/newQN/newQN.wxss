@@ -10,30 +10,48 @@
   border-bottom: 1px dashed #888;
 } 
 
-.line {
-  float: left;
-  width: 750rpx;
-  height: 1rpx;
-}
-
 .choiceEventType {
   float: left;
-  width: 330rpx;
+  width: 320rpx;
   height: 100rpx;
   margin-left: 30rpx;
   margin-bottom: 40rpx;
   background: #fff;
   border: 1px solid #888;
   border-radius: 10rpx;
-  padding: 5rpx;
+  text-align: center;
 }
 
 .choicePlaceholder {
   text-align: center;
 }
 
+.subline {
+  float: left;
+  width: 750rpx;
+  height: 1rpx;
+}
+
 .border-dashed {
   border: 1px dashed #888;
+}
+
+.sub-title-num {
+  float: left;
+  width: 60rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 10rpx;
+}
+
+.sub-title-input {
+  width: 680rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.question {
+  margin-bottom: 15px;
 }
 
 .add {
@@ -43,13 +61,10 @@
   border: 1px dashed #888;
 }
 
-.sub-title-input {
-  width: 750rpx;
-  height: 80rpx;
-  line-height: 80rpx;
-  padding-left: 40rpx;
-}
-
-.question {
-  margin-bottom: 15px;
+.forward {
+  margin-top: 130rpx;
+  margin-bottom: 130rpx;
+  width: 418rpx;
+  background: #fff;
+  border: 1px solid #888; 
 }

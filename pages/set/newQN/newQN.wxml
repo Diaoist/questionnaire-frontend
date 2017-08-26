@@ -1,24 +1,17 @@
 <input placeholder="Title" class="title-input"/>
-<view class="question">
-  <input placeholder="Sub-Title" class="sub-title-input"/>
-  <input class="choiceEventType" placeholder-class="choicePlaceholder" placeholder="选项A"/>
-  <input class="choiceEventType" placeholder-class="choicePlaceholder" placeholder="选项B"/>
+<view class="question" wx:for="{{ question }}">
+  <view class="sub-title-num">{{ index + 1 }}</view>
+  <input placeholder="请填写子标题" class="sub-title-input"/>
+  <input class="choiceEventType" wx:for="{{ item.subQuestion }}" placeholder-class="choicePlaceholder" placeholder="请填写选项" value="{{ item.question }}"/>
   <input class="choiceEventType border-dashed" placeholder-class="choicePlaceholder" placeholder="+"/>
-  <view class="classname"></view>
+  <view class="subline"></view>
 </view>
 
-<view class="question">
-  <input placeholder="Sub-Title" class="sub-title-input"/>
-  <button class="choiceEventType">选项A</button>
-  <button class="choiceEventType">选项B</button>
-  <button class="choiceEventType border-dashed">+</button>
-</view>
-
-<view class="">
-  <view class="line"></view>
-  <button class="choiceEventType">单选题</button>
-  <button class="choiceEventType">多选题</button>
-  <button class="choiceEventType">填空题</button>
-  <button class="choiceEventType border-dashed">+</button>
+<view wx:if="{{ choiceQuestionType === 1 }}" class="">
+  <view class="sub-title-num">{{ question.length + 1 }}</view>
+  <input placeholder="请填写子标题" class="sub-title-input" value="{{ tempSubTitle }}"/>
+  <button wx:for="{{ questionType }}" class="choiceEventType" bindtap="choiceQuestionType(index)">{{ item }}</button>
+  <!-- <button class="choiceEventType border-dashed" bindtap="add">+</button> -->
 </view>
 <button class="add" bindtap="addEvent">+</button>
+<button class="forward" bindtap="forwardEvent">转发问卷</button>

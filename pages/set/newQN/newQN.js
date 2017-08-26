@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    question: [{
+      subQuestion: [{
+        question: ''
+      }, {
+        question: ''
+      }]
+    }, {
+      subQuestion: [{
+        question: ''
+      }, {
+        question: ''
+      }]
+    }],
+    tempSubTitle: '',
+    questionType: ['单选题', '多选题', '填空题'],
+    choiceQuestionType: 1,
+    readyFlag: 0
   },
 
   /**
@@ -63,6 +79,10 @@ Page({
   onShareAppMessage: function () {
   
   },
+
+  /**
+   * 添加问题
+   */
   addEvent: function() {
     
   }
