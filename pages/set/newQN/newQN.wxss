@@ -45,7 +45,15 @@
 }
 
 .sub-title-input {
-  width: 680rpx;
+  width: 540rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.sub-question-type {
+  float: right;
+  padding-right: 20rpx;
+  width: 120rpx;
   height: 80rpx;
   line-height: 80rpx;
 }
@@ -67,4 +75,8 @@
   width: 418rpx;
   background: #fff;
   border: 1px solid #888; 
+}
+
+.border-error {
+  border: 1px solid red;
 }
