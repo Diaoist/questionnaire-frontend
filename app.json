@@ -31,7 +31,8 @@
     "example/searchbar/searchbar",
     "pages/download/download",
     "pages/myQuestionnaire/myQuestionnaire",
-    "pages/questionnaireInfo/questionnaireInfo"
+    "pages/questionnaireInfo/questionnaireInfo",
+    "pages/myQuestionnaire-null/myQuestionnaire-null"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -1,0 +1,42 @@
+.user-info-avatar {
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  background: #d8d8d8;
+  border: 1px solid #979797;
+  width: 99px;
+  height: 99px;
+  border-radius: 100%;
+}
+
+.line {
+  border: 0.5px solid #979797;
+  width: 100%;
+  margin-top: 34rpx;
+}
+
+.null-questionnaire {
+  width: 384rpx;
+  height: 134rpx;
+  margin-left: 184rpx;
+  margin-top: 76rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 48px;
+  color: #000;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.create-questionnaire {
+  width: 400rpx;
+  height: 150rpx;
+  margin-top: 100rpx;
+  margin-left: 176rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -0.15px;
+  text-align: center;
+  background-color: #C8E6C9;
+  border-radius: 8%;
+  line-height: 150rpx;
+}

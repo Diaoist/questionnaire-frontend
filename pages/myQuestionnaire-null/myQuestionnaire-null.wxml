@@ -1,0 +1,9 @@
+<view class="user-info">
+  <image src="/image/add.svg" class="user-info-avatar"></image>
+</view>
+
+<view class="line"></view>
+
+<view class="null-questionnaire">暂无问卷</view>
+
+<view class="create-questionnaire">发起问卷</view>
