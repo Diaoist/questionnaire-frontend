@@ -5,7 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    title: '',
+    questionTemplate: {
+      type: 0,
+      title: '',
+      subQuestion: ['', '']
+    },
+    questionTemplate_3: {
+      type: 2,
+      title: '',
+      subQuestion: ['']
+    },
+    question: [{
+      type: 1,
+      title: 'ss',
+      subQuestion: ['', '']
+    }, {
+      type: 1,
+      title: '',
+      subQuestion: ['', '']
+    }],
+    tempSubTitle: '',
+    questionType: ['单选题', '多选题', '填空题']
   },
 
   /**
@@ -63,7 +84,108 @@ Page({
   onShareAppMessage: function () {
   
   },
+
+
+
+  /** 
+   * 设置问卷标题
+   */
+  bindTitleInput: function (e) {
+    this.setData({
+      title: e.detail.value
+    })
+  },
+
+  /**
+   * 子标题输入
+   */
+  bindSubTitleInput: function (e) {
+    let question = this.data.question;
+    question[e.currentTarget.dataset.id].title = e.detail.value;
+    this.setData({
+      question
+    })
+  },
+
+  /**
+   * 子选项输入
+   */
+  bindSubQuestionInput: function (e) {
+    let question = this.data.question;
+    let num = e.currentTarget.dataset.id.split(',');
+    question[num[0]].subQuestion[num[1]] = e.detail.value;
+    this.setData({
+      question
+    })
+  },
+
+  /**
+   * 子选项添加
+   */
+  addQuestionInput: function (e) {
+    let question = this.data.question;
+    question[e.currentTarget.dataset.id].subQuestion.push('');
+    console.log(question[e.currentTarget.dataset.id].subQuestion);
+    this.setData({
+      question
+    })
+  },
+
+  /**
+   * 添加问题
+   */
   addEvent: function() {
-    
+    let that = this;
+    wx.showActionSheet({
+      itemList: that.data.questionType,
+      success: function (res) {
+        if (!res.cancel) {
+          let template = '';
+          if (res.tapIndex === 2) {
+            template = that.data.questionTemplate_3;
+          } else {
+            template = that.data.questionTemplate;
+          }
+          template.type = res.tapIndex;
+          that.data.question.push(template);
+          that.setData({
+            question: that.data.question
+          })
+        }
+      }
+    });
+  },
+
+  /**
+   * 转发问卷
+   */
+  forwardEvent: function() {
+    let ready = this.data.question.map((item) => {
+      if (item.subQuestion.indexOf('') !== -1 || item.subQuestion.title === '') {
+        return 0;
+      } else {
+        return 1;
+      }
+    });
+    if (ready.indexOf(0) === -1 && this.data.question.length > 0 && this.data.title !== '') {
+
+    } else {
+      let message = '';
+      if (this.data.question.length < 1) {
+        message = '请添加问卷问题';
+      } else if (this.data.title === '') {
+        message = '请填写问卷标题';
+      } else {
+        message = '请确认填写所有子标题及可选项';
+      }
+      wx.showModal({
+        content: message,
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+          }
+        }
+      });
+    }
   }
 })
