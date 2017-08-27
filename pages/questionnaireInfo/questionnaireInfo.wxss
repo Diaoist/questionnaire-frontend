@@ -1,0 +1,76 @@
+/* newQN.wxss */
+.title-input {
+  height: 104rpx;
+  line-height: 104rpx;
+  width: 750rpx;
+  padding-left: 40rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 52rpx;
+  border-bottom: 1px dashed #888;
+} 
+
+.line {
+  float: left;
+  width: 750rpx;
+  height: 1rpx;
+}
+
+.choiceEventType {
+  float: center;
+  width: 330rpx;
+  height: 100rpx;
+  margin-top:40rpx; 
+  margin-left: 30rpx;
+  margin-bottom: 40rpx;
+  background: #fff;
+  border: 1px solid #888;
+  border-radius: 10rpx;
+  padding: 5rpx;
+}
+
+.choicePlaceholder {
+  text-align: center;
+}
+
+.border-dashed {
+  border: 1px dashed #888;
+}
+
+.download {
+  margin-top: 130rpx;
+  width: 418rpx;
+  background: #fff;
+  background-color: #888;
+  border: 1px solid #888;
+}
+
+.sub-title-input {
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.questionnaire-choose {
+  font-size: 24px;
+}
+
+.questionnaire-choose-persent {
+  margin-right: 3px;
+  font-size: 15px;
+}
+
+.weui-cell::before {
+  border-bottom:1rpx solid #d9d9d9;
+  border-top: 0rpx;
+}
+
+.questionnaire-chooseInfo {
+  border-top: 1rpx dashed #888;
+  border-bottom: 1rpx solid #d9d9d9;
+}

@@ -29,7 +29,9 @@
     "example/navbar/navbar",
     "example/tabbar/tabbar",
     "example/searchbar/searchbar",
-    "pages/download/download"
+    "pages/download/download",
+    "pages/myQuestionnaire/myQuestionnaire",
+    "pages/questionnaireInfo/questionnaireInfo"
   ],
   "window": {
     "navigationBarTextStyle": "black",

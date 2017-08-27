@@ -1,15 +1,18 @@
 /* download.wxss */
 .download-questionnaire {
-  width: 400rpx;
-  height: 150rpx;
+  position: relative;
+  width: 418rpx;
+  height: 106rpx;
   line-height: 150rpx;
-  top: 382rpx;
+  top:200px;
   color:#000; 
   background: #1AAD19
 }
 
 .download-file {
-  width: 288rpx;
-  height: 288rpx;
-  top: 382rpx;
+  position: relative;
+  width:144px;
+  height:144px;
+  top: 350rpx;
+  left: 232rpx;
 }

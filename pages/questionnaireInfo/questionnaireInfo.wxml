@@ -1,0 +1,38 @@
+<input placeholder="Title" class="title-input" />
+<view class="question">
+  <input placeholder="Sub-Title" class="sub-title-input" />
+
+  <view class="questionnaire-chooseInfo">
+
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="/image/file.svg" style="width: 20px;height: 20px;margin-right: 5px" />
+      </view>
+      <view class="weui-cell__bd weui-cell_primary">
+        <view class="questionnaire-choose">选项A</view>
+
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+        <view class="questionnaire-choose-persent">32%</view>
+      </view>
+    </navigator>
+
+    <navigator url="" class="weui-cell weui-cell_access " hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="/image/file.svg" style="width: 20px;height: 20px;margin-right: 5px" />
+      </view>
+      <view class="weui-cell__bd weui-cell_primary">
+        <view class="questionnaire-choose">选项B</view>
+
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+        <view class="questionnaire-choose-persent">68%</view>
+      </view>
+    </navigator>
+  </view>
+
+  <view class="classname"></view>
+</view>
+
+
+<button class="download">导出数据</button>
