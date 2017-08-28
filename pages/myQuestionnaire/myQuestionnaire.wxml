@@ -3,16 +3,15 @@
 </view>
 
 <view class="questionnaire-infolist">
-  <view class="questionnaire-infolist-overview weui-flex">
-    <view class="questionnaire-infolist-id weui-flex__item">
-      <view class="questionnaire-infolist-id-title idInfo">Title</view>
-      <view class="questionnaire-infolist-id-hint idInfo">hint</view>
+  <view class="questionnaire-infolist-overview">
+    <view class="questionnaire-infolist-id">
+      <view class=" questionnaire-infolist-id-title ">Title</view>
+      <view class="questionnaire-infolist-id-hint ">hint</view>
     </view>
-      
-    <view class="questionnaire-infolist-data weui-flex__item">
-      <view class="questionnaire-infolist-data-shareTimes statisticsData">转发次数：</view>
-      <view class="questionnaire-infolist-data-submitTimes statisticsData">提交次数：</view>
-      <view class="questionnaire-infolist-data-readTimes statisticsData">阅读次数：</view>
+    <view class="questionnaire-infolist-data">
+      <view class="questionnaire-infolist-data-shareTimes statisticsData ">转发次数：</view>
+      <view class="questionnaire-infolist-data-submitTimes statisticsData ">提交次数：</view>
+      <view class="questionnaire-infolist-data-readTimes statisticsData ">阅读次数：</view>
     </view>
   </view>
 </view>

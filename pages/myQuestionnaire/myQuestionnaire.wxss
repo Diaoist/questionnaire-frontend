@@ -1,61 +1,66 @@
 /* myQuestionnaire.wxss */
+
 .user-info-avatar {
-  position: relative;
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  top: 20px;
-  left: 20px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  background-color: #c5c6c3;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  background: #d8d8d8;
+  border: 1px solid #979797;
+  width: 99px;
+  height: 99px;
+  border-radius: 100%;
 }
 
 .questionnaire-infolist {
-  position: relative;
+  margin-top: 32rpx;
   width: 100%;
-  top: 38px;
   border-top: 0.5px solid #000;
-  
 }
 
 .questionnaire-infolist-overview {
-  float: left;
   width: 100%;
-  height: 200rpx;
+  height: 254rpx;
   border-bottom: 0.5px solid #000;
-  margin-bottom: 10rpx;
 }
 
 .questionnaire-infolist-id {
-  /* background-color: red; */
-  width: auto;
-  margin-top: 2%;
-  margin-bottom: 68rpx;
-  margin-right: 80rpx;
-  text-align: center;
-  font-size: auto;
-}
-
-.idInfo {
-  text-align: right;
+  float: left;
+  margin-top: 28rpx;
+  margin-bottom: 70rpx;
+  width: 314rpx;
+  height: 156rpx;
 }
 
 .questionnaire-infolist-id-title {
+  width: 314rpx;
+  height: 100rpx;
+  font-family: PingFangSC-Regular;
   font-size: 36px;
+  color: #000;
+  letter-spacing: 0;
+  text-align: right;
 }
 
-.questionnaire-infolist-hint {
-  font-size: 12px;
+.questionnaire-infolist-id-hint {
+  width: 314rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: 0;
+  text-align: right;
 }
 
 .questionnaire-infolist-data {
-  width: 460rpx;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  margin-left: 100rpx;
+  margin-top: 32rpx;
+  margin-bottom: 52rpx;
+  float: right;
+  width: 180px;
+  height: 83px;
 }
 
 .statisticsData {
-  margin-top: 5rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: 0;
+  text-align: left;
 }
