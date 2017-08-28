@@ -2,7 +2,7 @@
 .title-input {
   height: 104rpx;
   line-height: 104rpx;
-  width: 750rpx;
+  width: 710rpx;
   padding-left: 40rpx;
   margin-top: 40rpx;
   margin-bottom: 40rpx;
