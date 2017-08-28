@@ -16,15 +16,7 @@ Page({
       title: '',
       subQuestion: ['']
     },
-    question: [{
-      type: 1,
-      title: 'ss',
-      subQuestion: ['', '']
-    }, {
-      type: 1,
-      title: '',
-      subQuestion: ['', '']
-    }],
+    question: [],
     tempSubTitle: '',
     questionType: ['单选题', '多选题', '填空题']
   },
@@ -161,7 +153,7 @@ Page({
    */
   forwardEvent: function() {
     let ready = this.data.question.map((item) => {
-      if (item.subQuestion.indexOf('') !== -1 || item.subQuestion.title === '') {
+      if (item.subQuestion.indexOf('') !== -1 || item.title === '') {
         return 0;
       } else {
         return 1;
