@@ -33,7 +33,9 @@
     "pages/myQuestionnaire/myQuestionnaire",
     "pages/questionnaireInfo/questionnaireInfo",
     "pages/myQuestionnaire-null/myQuestionnaire-null",
-    "pages/fillQuestionnaire/fillQuestionnaire"
+    "pages/fillQuestionnaire/fillQuestionnaire",
+    "pages/write",
+    "pages/writeQuestionnaire/writeQuestionnaire"
   ],
   "window": {
     "navigationBarTextStyle": "black",
