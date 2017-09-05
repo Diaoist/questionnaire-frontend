@@ -14,7 +14,7 @@ Page({
   },
   setQN: function (e) {
     wx.navigateTo({
-      url: '../set/newQN/newQN'
+      url: '../setQuestionnaire/setQuestionnaire'
     })
   },
   myQN: function () {

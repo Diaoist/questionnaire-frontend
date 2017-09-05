@@ -1,3 +1,4 @@
+import utils from '../../utils/index'
 // newQN.js
 Page({
 
@@ -162,7 +163,7 @@ Page({
   },
 
   /**
-   * 转发问卷
+   * 创建问卷
    */
   forwardEvent: function() {
     let ready = this.data.question.map((item) => {
@@ -173,7 +174,19 @@ Page({
       }
     });
     if (ready.indexOf(0) === -1 && this.data.question.length > 0 && this.data.title !== '') {
-      
+      utils.request(
+        'USER_LOGIN',
+        {
+          data: {
+            code: 'ff'
+          },
+          success: () => {
+            wx.navigateTo({
+              url: '../questionnaireInfo/questionnaireInfo'
+            })
+          }
+        }).then(
+        );
     } else {
       let message = '';
       if (this.data.question.length < 1) {
