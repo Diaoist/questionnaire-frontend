@@ -1,0 +1,14 @@
+<view class="questionnaire-userinfo">
+  <image class="questionnaire-userinfo-avatar" src="/image/done.svg"></image>
+</view>
+
+
+
+<view class="title">Title</view>
+
+<view class="subtitle">subTitle</view>
+<view class="questionnaire-chooselist">
+  <view class="single-choose"></view>
+</view>
+
+<view class="subtitle">subTitle</view>

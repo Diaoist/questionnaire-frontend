@@ -32,7 +32,8 @@
     "pages/download/download",
     "pages/myQuestionnaire/myQuestionnaire",
     "pages/questionnaireInfo/questionnaireInfo",
-    "pages/myQuestionnaire-null/myQuestionnaire-null"
+    "pages/myQuestionnaire-null/myQuestionnaire-null",
+    "pages/fillQuestionnaire/fillQuestionnaire"
   ],
   "window": {
     "navigationBarTextStyle": "black",
