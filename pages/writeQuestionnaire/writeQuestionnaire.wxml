@@ -1,2 +1,18 @@
-<!--pages/writeQuestionnaire/writeQuestionnaire.wxml-->
-<text>{{page}}.wxml</text>
+<input placeholder="请填写问卷标题" class="title-input" bindinput="bindTitleInput"/>
+<view class="question" wx:for="{{ question }}" wx:for-index="idx" wx:for-item="itemQuestion">
+  <view class="sub-title-num">{{ idx + 1 }}</view>
+  <view class="sub-question-type">{{ questionType[itemQuestion.type] }}</view>
+  <input placeholder="请填写子标题" class="sub-title-input" bindinput="bindSubTitleInput" data-id="{{ idx }}" value="{{ itemQuestion.title }}"/>
+  <input class="choiceEventType" wx:for="{{ itemQuestion.subQuestion }}" bindinput="bindSubQuestionInput" data-id="{{ idx }},{{ index }}" placeholder-class="choicePlaceholder" placeholder="请填写选项描述" value="{{ item }}"/>
+  <button wx:if="{{ itemQuestion.type !== 2 }}" class="choiceEventType border-dashed" bindtap="addQuestionInput" data-id="{{ idx }}">+</button>
+  <view class="subline"></view>
+</view>
+
+<!-- <view wx:if="{{ choiceQuestionType === 1 }}">
+  <view class="sub-title-num">{{ question.length + 1 }}</view>
+  <input placeholder="请填写子标题" class="sub-title-input" value="{{ tempSubTitle }}"/>
+  <button wx:for="{{ questionType }}" class="choiceEventType" bindtap="choiceType">{{ item }}</button> -->
+  <!-- <button class="choiceEventType border-dashed" bindtap="add">+</button> -->
+<!-- </view> -->
+<button class="add" bindtap="addEvent">+</button>
+<button class="forward" bindtap="forwardEvent">创建问卷</button>
